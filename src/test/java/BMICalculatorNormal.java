@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -11,7 +10,6 @@ public class BMICalculatorNormal {
     @Test
     public void categoryNormal() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-
         WebDriver browser = new ChromeDriver();
         browser.get("https://healthunify.com/bmicalculator/");
 
